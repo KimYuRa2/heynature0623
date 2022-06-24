@@ -1,5 +1,5 @@
 var modals = document.getElementsByClassName("event_box_wrap");
-var btns = document.getElementsByClassName("event_on");
+var btns = document.getElementsByClassName("event_oning");
 var spanes = document.getElementsByClassName("close");
 var funcs = [];
 
@@ -51,14 +51,14 @@ $(document).ready(function(){
 
       }
       if ( $('.view3').hasClass('active') == true ) {
-        $('.event_on').hide();
+        $('.event_oning').hide();
       } else {
-        $('.event_on').show();
+        $('.event_oning').show();
       }
 
     });
 
-    $('.event_on').click(function(){
+    $('.event_oning').click(function(){
       $('body').addClass('rol_stop');
     })
     $('.close').click(function(){
