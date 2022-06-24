@@ -314,9 +314,8 @@ body {
 .notice_txt_wrap{
     border-bottom: 1px solid #c7c1ba;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     margin-top: 15px;
+
 }
 
 .notice_txt_wrap:first-child{
@@ -333,6 +332,7 @@ body {
     padding: 30px 15px;
     width: 100%;
     box-sizing: border-box;
+    display: flex;
 }
 
 .ask_txt{
@@ -683,10 +683,10 @@ body {
     letter-spacing: 2px;
 }
 
-.notice_date>span{
-    display: block;
+.notice_date>{
+    width: 100px;
+    display: inline-block;
     font-size: 15px;
-    float:right;
     font-family: 'Noto Sans KR', '맑은 고딕', 'AppleGothic', 'Dotum', '돋움', 'sans-serif';
 }
 
@@ -713,15 +713,17 @@ body {
 }
 
 .notice_txt{
+    width: calc(100% - 120px);
     height: 25px;
     line-height: 25px;
     padding: 30px 15px;
 
     /* 말줄임표 */
-    display:block;
+    display:inline-block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    box-sizing: border-box;
 }
 
 .notice_txt>a{
@@ -812,11 +814,20 @@ body {
 }
 
 .notice_panel{
-    padding: 0 18px;
+    width:100%;
+    padding: 30px 50px 10px;
+    box-sizing: border-box;
     display: none;
-    background-color: white;
+    background-color: rgba(249, 244, 230, 0.3);
     overflow: hidden;
     transition: all 0.4s;
+    border-top: 1px solid #c7c1ba;
+}
+
+.notice_content_btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
 }
 
 

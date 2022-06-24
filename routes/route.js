@@ -79,7 +79,7 @@ router.post('/updatenotice' ,
                 res.render('updatenotice', {row: row[0], errs: errs['errors']} )
             });
         } else{ //에러가 없다면 notice 수정하기
-            db.updatenoticeById(id, title, content, ()=> {
+            db.updateNoticeById(id, title, content, ()=> {
                 res.redirect('/cscenter');
             });
         }

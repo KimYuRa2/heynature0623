@@ -48,10 +48,10 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
 
-    if (panel.style.display === "none") {
-      panel.style.display = "block";
-    } else {
+    if (panel.style.display === "block") {
       panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
     }
 
   });
