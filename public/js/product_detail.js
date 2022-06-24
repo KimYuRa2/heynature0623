@@ -109,7 +109,7 @@ var spanes = document.getElementsByClassName("close");
 var funcs = [];
 
 // Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
-function Modal(num) {
+function detail_Modal(num) {
     return function() {
       // 해당 클래스의 내용을 클릭하면 Modal을 띄웁니다.
       btns[num].onclick =  function() {
