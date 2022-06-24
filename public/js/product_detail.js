@@ -133,7 +133,7 @@ function detail_Modal(num) {
 
 // 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
 for(var i = 0; i < btns.length; i++) {
-    funcs[i] = Modal(i);
+    funcs[i] = detail_Modal(i);
   }
    
   // 원하는 Modal 수만큼 funcs 함수를 호출합니다.
